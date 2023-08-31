@@ -357,8 +357,18 @@ body {
 .project_heading {
   font-weight: 400;
 }
-.project_list {
-  margin-top: 50px;
+@media (max-width: 767px) {
+  .project_list {
+    margin-top: 25px;
+  }
+  .project_section + .project_section {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .project_list {
+    margin-top: 50px;
+  }
 }
 .project_list {
   display: flex;
