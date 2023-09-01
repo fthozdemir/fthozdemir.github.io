@@ -74,8 +74,8 @@ body {
 body {
   background-color: var(--c-bg);
   font-family: "Neue Montreal";
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: 400;
+  font-size: 20px;
   font-feature-settings: "palt";
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
