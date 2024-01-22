@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "ES6",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "paths": {
+      "components/*": [
+        "src/components/*"
+      ],
+      "pages/*": [
+        "src/pages/*"
+      ],
+      "config/*": [
+        "src/config/*"
+      ],
+      "utils/*": [
+        "src/utils/*"
+      ],
+      "assets/*": [
+        "src/assets/*"
+      ],
+      "hooks/*": [
+        "src/hooks/*"
+      ],
+
+    }
+  },
+  "include": [
+    "./src",
+    "./webpack.config.ts",
+    "./types.d.ts",
+    "**/*.d.ts"
+    
+  ]
+}

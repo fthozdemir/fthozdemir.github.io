@@ -1,0 +1,36 @@
+.moveable-control {
+    position: absolute !important;
+    border-radius: 0% !important;
+    border: 0px solid #fff !important;
+    box-sizing: border-box;
+    background: transparent !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    z-index: 10;
+}
+.moveable-line {
+    background: transparent !important; /* Green */
+    border: 30px !important;
+    border-radius: 3px !important;
+}
+
+.moveable-direction.moveable-e,
+.moveable-direction.moveable-w {
+    cursor: ew-resize;
+}
+.moveable-direction.moveable-s,
+.moveable-direction.moveable-n {
+    cursor: ns-resize;
+}
+.moveable-direction.moveable-nw,
+.moveable-direction.moveable-se,
+.moveable-reverse .moveable-direction.moveable-ne,
+.moveable-reverse .moveable-direction.moveable-sw {
+    cursor: nwse-resize;
+}
+.moveable-direction.moveable-ne,
+.moveable-direction.moveable-sw,
+.rCSckyn7i.moveable-reverse .moveable-direction.moveable-nw,
+moveable-reverse .moveable-direction.moveable-se {
+    cursor: nesw-resize;
+}
