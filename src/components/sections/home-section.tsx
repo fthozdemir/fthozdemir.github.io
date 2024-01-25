@@ -1,8 +1,9 @@
 import React from "react";
+import Section from "./section";
 
 const HomeSection = () => {
     return (
-        <section className="page" data-page="home">
+        <Section>
             <div className="page_content home">
                 <p className="home_aboutme">
                     <span>Born in 1994</span>
@@ -18,7 +19,7 @@ const HomeSection = () => {
                     <span>and development.</span>
                 </p>
             </div>
-        </section>
+        </Section>
     );
 };
 

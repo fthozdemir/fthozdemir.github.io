@@ -67,6 +67,7 @@ ul {
 html,
 body {
     height: 100%;
+    font-family: "Neue", "Hiragino Sans", Meiryo, sans-serif;
 }
 body {
     background-color: var(--c-bg);
@@ -109,12 +110,15 @@ body {
     align-items: center;
     column-gap: 0.5em;
     font-size: 30px;
+    animation: fadeOut 0.6s ease-out 2.5s forwards;
 }
 #EnterView ._t1 {
     font-weight: 400;
+    animation: fadeOut 0.6s ease-out 1.6s forwards;
 }
 #EnterView ._t2 {
     font-weight: 200;
+    animation: fadeOut 0.6s ease-out 1.8s forwards;
 }
 #Background {
     position: fixed;
@@ -226,7 +230,6 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     mix-blend-mode: difference;
 }
 .content_inner {
@@ -316,10 +319,21 @@ body {
     opacity: 0;
 }
 .page {
-    display: none;
     width: 100%;
+    animation: fadeIn 1s ease-out forwards;
     min-height: calc(var(--vh, 1vh) * 100);
 }
+
+.scrollable {
+    overflow-y: auto !important;
+    max-height: 100vh; /* This is an example value, adjust as needed */
+    -webkit-overflow-scrolling: touch;
+}
+
+.fadeOut {
+    animation: fadeOut 0.4s ease-out forwards;
+}
+
 .page.is-leaving {
     position: absolute;
     left: 0;
@@ -342,6 +356,7 @@ body {
     text-align: right;
     white-space: nowrap;
 }
+
 @media (min-width: 1280px) {
     .project {
         padding: calc(var(--pad) * 2 + 125px) calc(var(--pad) * 2);
@@ -494,4 +509,22 @@ body {
 }
 .font-sans {
     font-family: "Neue Montreal";
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

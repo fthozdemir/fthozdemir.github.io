@@ -1,12 +1,12 @@
 import React from "react";
-
+import Section from "./section";
 export const ProjectsSection = () => {
     return (
-        <section className="page" data-page="projects">
-            <div className="page_content project">
-                <div className="project_section">
+        <Section>
+            <div className="page_content project scrollable">
+                <div className="project_section ">
                     <h2 className="project_heading">&#x25a0; Projects (Future Experience)</h2>
-                    <div className="project_list">
+                    <div className="project_list ">
                         <a
                             className="project_item text-btn"
                             href="https://www.youtube.com/watch?v=1QNTyC69ml0"
@@ -101,6 +101,6 @@ export const ProjectsSection = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };

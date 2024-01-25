@@ -1,10 +1,9 @@
 import React from "react";
-import {Theme} from "./theme";
-import {Frame} from "./frame";
-import {Header} from "./header";
+import {Theme} from "../components/elements/theme";
+import {Frame} from "../components/elements/frame";
+import {Header} from "../components/elements/header";
 
-import {ProjectsSection} from "components/sections/projects-section";
-export const Page = () => {
+export const Page = ({children}) => {
     return (
         <>
             <div id="Page">
@@ -17,7 +16,7 @@ export const Page = () => {
                 <Header />
                 <main className="content" id="Content" data-scroll="area">
                     <div className="content_inner" data-scroll="target">
-                        <ProjectsSection />
+                        {children}
                     </div>
                 </main>
             </div>
